@@ -25,6 +25,12 @@ The LoRAs below are used in the Clarity Upscaler workflow for adding detail.
 ### Upscale Models
 * **[NomosUniDAT_otf.pth](https://openmodeldb.info/models/4x-NomosUniDAT-otf).** A 4x upscaler used in my Clarity Upscale workflow. Any upscale model can be used in its place. 
 
+### IC-Light Models
+
+* **[Download from HuggingFace.](https://huggingface.co/lllyasviel/ic-light/tree/main)** For the IC-Light workflow. 
+* Use *fb* version for basic workflow that generates a background from the prompt. 
+* Use *fbc* version for blending an image with an existing background. 
+
 ### Custom Nodes
 Some workflows (such as the Clarity Upscale workflow) include custom nodes that aren't included in base ComfyUI. Install these with *Install Missing Custom Nodes* in ComfyUI Manager.
 
