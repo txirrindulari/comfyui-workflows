@@ -6,6 +6,7 @@ This repo contains common workflows for generating AI images with [ComfyUI](http
 
 * **[SDXL Pipeline](https://github.com/roblaughter/comfyui-workflows/blob/main/SDXLPipeline.json).** A basic SDXL image generation pipeline with two stages (first pass and upscale/refiner pass) and optional optimizations. Use with any SDXL model, such as my [RobMix Ultimate checkpoint](https://civitai.com/models/334323/robs-mix-ultimate). 
 * **[Clarity Upscaler](https://github.com/roblaughter/comfyui-workflows/blob/main/ClarityUpscaleSD15.json).** A ComfyUI implementation of the [Clarity Upscaler](https://github.com/philz1337x/clarity-upscaler), a "free and open source Magnific alternative." Out of the box, upscales images 2x with some optimizations for added detail. 
+* **[IC-Light Basic.](https://github.com/roblaughter/comfyui-workflows/blob/main/ICLightBasic.json)** An implementation of [IC-Light](https://github.com/lllyasviel/IC-Light?tab=readme-ov-file) relighting model using the [ComfyUI native implementation](https://github.com/kijai/ComfyUI-IC-Light). This version replaces the background based on text prompt and relights the image to match. 
 * **[CosXL Sample Workflow](https://github.com/roblaughter/comfyui-workflows/blob/main/cosxl_sample_workflow.json).** A sample workflow for running CosXL models, such as my [RobMix CosXL](https://civitai.com/models/397300/robmix-cosxl) checkpoint. CosXL models have better dynamic range and finer control than SDXL models. 
 * **[CosXL Edit Sample Workflow](https://github.com/roblaughter/comfyui-workflows/blob/main/cosxl_edit_example_workflow.json).** A sample workflow for running CosXL Edit models, such as my [RobMix CosXL Edit checkpoint](https://civitai.com/models/397741/robmix-cosxl-edit). A CosXL Edit model takes a source image as input alongside a prompt, and interprets the prompt as an instruction for how to alter the image, similar to InstructPix2Pix.
 
@@ -26,6 +27,7 @@ The LoRAs below are used in the Clarity Upscaler workflow for adding detail.
 
 ### Custom Nodes
 Some workflows (such as the Clarity Upscale workflow) include custom nodes that aren't included in base ComfyUI. Install these with *Install Missing Custom Nodes* in ComfyUI Manager.
+
 * **[ComfyUI Inspire Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack).** Includes the Ksampler Inspire node that includes the Align Your Steps scheduler for improved image quality. Standard KSampler with your preferred scheduler can be used in its place. 
 * **[ComfyUI NN Latent Upscale](https://github.com/Ttl/ComfyUi_NNLatentUpscale).** A neural network latent upscale for much higher quality compared with an interpolated latent upscale. Standard latent upscaler can be used in its place with poorer results. 
 * **[Perturbed Attention Guidance](https://github.com/pamparamm/sd-perturbed-attention).** An advanced implementation of the Perturbed Attention Guidance (PAG) node in ComfyUI. PAG is an alternative to CFG for creating higher quality images with better prompt adherence. Lower CFG proportionally, or use PAG's scaling. The standard PAG node can be used in its place. 
