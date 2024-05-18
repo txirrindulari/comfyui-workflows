@@ -486,7 +486,7 @@
         "text": ""
       },
       "widgets_values": [
-        "Load input image"
+        "Add a prompt that describes the subject and background"
       ],
       "color": "#432",
       "bgcolor": "#653"
