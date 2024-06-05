@@ -1,4 +1,5 @@
 #Using the Upscale Workflow
+
 This workflow performs a *generative* upscale on an input image. Rather than simply interpolating pixels with a standard model upscale (ESRGAN, UniDAT, etc.), the upscaler uses an upscale model to upres the image, then performs a tiled img2img to regenerate the image and add details. 
 
 I've optimized this workflow for 
