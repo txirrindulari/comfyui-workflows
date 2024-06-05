@@ -26,5 +26,8 @@ If the appearance of your image changes too much, you've likely set the ControlN
 If your image lacks detail, your denoise strength may be too low. In this case, the model doesn't have enough creative control to generate the details of the upscaled image. 
 
 ![Setting Comparison: Lion](https://github.com/roblaughter/comfyui-workflows/blob/main/docs/setting-comparison-lion.png?raw=true)
+*In the center image, the ControlNet strength is too high, causing artifacts. In the third image, it is too low, losing detail.*
+
 ![Setting Comparison: Lion](https://github.com/roblaughter/comfyui-workflows/blob/main/docs/setting-comparison-portrait.png?raw=true)
+*In the center image, the ControlNet strength is too high, causing artifacts. The third image uses the same settings as the third image above, but the ControlNet strength is appropriate for the realistic portrait.*
 
