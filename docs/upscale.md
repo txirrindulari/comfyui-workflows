@@ -11,7 +11,7 @@ I've optimized this workflow for photorealistic styles, but it performs well for
 
 ## Comparisons
 
-Below is a comparison of various parameters. View at full resolution to pixel peep 
+Below is a comparison of various parameters. View at full resolution to examine more subtle differences. 
 
 ### Denoise
 ![Denoise](https://github.com/roblaughter/comfyui-workflows/blob/main/docs/comparison-denoise-small.png?raw=true) 
