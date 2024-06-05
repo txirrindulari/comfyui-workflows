@@ -1,8 +1,8 @@
-##Using the Upscale Workflow
+# Using the Upscale Workflow
 
 This workflow performs a *generative* upscale on an input image. Rather than simply interpolating pixels with a standard model upscale (ESRGAN, UniDAT, etc.), the upscaler uses an upscale model to upres the image, then performs a tiled img2img to regenerate the image and add details. 
 
-I've optimized this workflow for 
+I've optimized this workflow for photorealistic styles, but it performs well for anime and illustrations as well. 
 
 ## Parameter Overview
 * **Denoise.** Controls the amount of denoising applied to the img2img encoded image. Lower values are more similar to the original image, while higher values give the upscaler more room for adding detail. *Recommended: 0.3-0.5.*
